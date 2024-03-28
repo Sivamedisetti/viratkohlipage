@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 33px 9%;
+    background: transparent;
+    
+}
+.logo{
+    font-size: 30px;
+    font-weight: 300;
+    color:white;
+}
+.navlist{
+    display: flex;
+    /* display: none; */
+}
+.navlist a{
+    color: rgb(255, 255, 255);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .50s ease-in;
+}
+.navlist a:hover{
+    border-bottom: 3px solid rgb(207, 195, 195);   
+    transform: translateY(-10px);
+    
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    /* margin-top: -100px; */
+    padding: 0 19%;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg,#2d6235 0%,#38703d 28.53%,#133917 75.52% );
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+.hero-img img{
+    width: 600px;
+    height: auto;
+
+
+}
+.hero-text h1{
+    font-family: 'permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: white;
+
+}
+.icons{
+    position: absolute;
+    top: 70%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    color: aliceblue;
+    font-size: 24px;
+    transition:all .50s ease;
+}
+.icons i:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+@media (max-width:1535px){
+    header{
+        padding:0 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: 2s;
+    }
+}
+@media (max-width:1460px){
+    section{
+        padding: 0 12%;
+        transition: 2s;
+    }
+}
+@media (max-width:1340px){
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:1195px){
+section{
+    padding: 0 3%;
+    transition: 2s;
+}
+.hero-text{
+    padding-top: 115px;
+}
+.hero{
+    height: 100%;
+    gap: 1 rem;
+    grid-template-columns: 1fr;
+}
+.icons{
+    display: none;}  
+}
+@media (max-width:990px){
+    #menu-icon{
+        display: block;
+       
+    }
+    .navlist{
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 150px;
+        height: 35svh;
+        background-color: #4d9559;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: none;
+        margin-left: 10%;
+        margin: 7px 0;
+    }
+    #menu-icon.navlist:hover {
+        display: block;
+    }
+    
+}
+@media (max-width:680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
